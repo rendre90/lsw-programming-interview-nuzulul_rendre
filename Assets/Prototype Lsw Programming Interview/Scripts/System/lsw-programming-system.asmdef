@@ -1,0 +1,16 @@
+{
+    "name": "lsw-programming-system",
+    "rootNamespace": "",
+    "references": [
+        "GUID:be48c12c50c40fd4aac2c9ac986d434d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
