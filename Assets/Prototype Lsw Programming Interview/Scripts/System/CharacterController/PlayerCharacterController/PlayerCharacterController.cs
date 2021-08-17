@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PrototypeLSWProgrammingInterview.System.CharacterInput;
 
 
 namespace PrototypeLSWProgrammingInterview.System.CharacterController.PlayerCharacterController{
@@ -11,15 +10,19 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController.PlayerChar
        protected override void Start(){
            base.Start();
            transform.tag = "Player";
+           gameObject.layer = LayerMask.NameToLayer("CharacterPlayer");
            InitializeMove();
+           InitializeInteract();
        }
 
        void Update(){
-           SetDirection();
+           ReadMoveInput();
+           ReadInteractionInput();
        }
 
        void FixedUpdate(){
            Move();
+           DetectOtherNpc();
        }
     }
 }
