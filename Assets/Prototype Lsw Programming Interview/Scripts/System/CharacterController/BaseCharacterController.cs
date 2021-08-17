@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PrototypeLSWProgrammingInterview.System.Navigation;
+
 
 namespace PrototypeLSWProgrammingInterview.System.CharacterController{
 
@@ -15,7 +15,6 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController{
             rb = GetComponent<Rigidbody2D>();
             rb.freezeRotation = true;
             rb.gravityScale = 0;
-            gameObject.layer = LayerMask.NameToLayer("Character");
         }
 
 
