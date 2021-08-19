@@ -149,7 +149,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   signObj: {fileID: 7049536904352811676}
+  shopLink: {fileID: 11400000, guid: 5454843225826324cb5f46498494cafc, type: 2}
 --- !u!1 &7055891225648628587
 GameObject:
   m_ObjectHideFlags: 0
