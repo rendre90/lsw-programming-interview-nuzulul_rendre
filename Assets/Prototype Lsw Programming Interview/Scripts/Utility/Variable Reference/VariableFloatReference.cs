@@ -6,7 +6,7 @@ using PrototypeLSWProgrammingInterview.Utility.VariableReference.ReferenceUtilit
 
 namespace PrototypeLSWProgrammingInterview.Utility.VariableReference
 {
-    [CreateAssetMenu(menuName = "MyScriptableObject/FloatVariable")]
+    [CreateAssetMenu(menuName = "MyScriptableObjects/FloatVariable")]
     public class VariableFloatReference : BaseVariableReference, IReferenceUtility<float>, IReferenceLerpValue<float>
     {
         public float Value => value;
@@ -36,7 +36,7 @@ namespace PrototypeLSWProgrammingInterview.Utility.VariableReference
             this.LerpFloat(Value, 0.3f, GetHashCode().ToString(),  OnUpdateVariable);
         }
 
-        public void ForceRefre(){
+        public override void ForceRefresh(){
             LerpValue();
         }
 

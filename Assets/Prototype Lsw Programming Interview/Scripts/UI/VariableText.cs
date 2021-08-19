@@ -18,7 +18,7 @@ namespace PrototypeLSWProgrammingInterview.UI
         }
 
         void Start(){
-            UpdateValue();
+           value.ForceRefresh();
         }
 
     
