@@ -8,7 +8,7 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController.ShopKeeper
         protected override void Start()
         {
             base.Start();
-            gameObject.layer = LayerMask.NameToLayer("CharacterNPC");
+            gameObject.layer = LayerMask.NameToLayer("NPC");
             InitializeInteractable();
         }
     }
