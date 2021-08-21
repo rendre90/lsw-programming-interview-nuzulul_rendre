@@ -32,6 +32,11 @@ namespace PrototypeLSWProgrammingInterview.Utility.VariableReference
             LerpValue(); 
         }
 
+        void IReferenceUtility<float>.OverrideValue(float otherValue){
+            value = otherValue;
+            LerpValue();
+        }
+
         void LerpValue(){
             this.LerpFloat(Value, 0.3f, GetHashCode().ToString(),  OnUpdateVariable);
         }

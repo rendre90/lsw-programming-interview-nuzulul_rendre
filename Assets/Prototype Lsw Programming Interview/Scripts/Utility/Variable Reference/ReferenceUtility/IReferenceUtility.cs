@@ -7,5 +7,6 @@ namespace PrototypeLSWProgrammingInterview.Utility.VariableReference.ReferenceUt
     {
         void DecreaseValue(T otherValue);
         void IncreaseValue(T otherValue);
+        void OverrideValue(T otherValue);
     }
 }
