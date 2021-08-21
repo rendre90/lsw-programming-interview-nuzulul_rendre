@@ -1,3 +1,16 @@
 {
-	"name": "lsw-programming-utility"
+    "name": "lsw-programming-utility",
+    "rootNamespace": "",
+    "references": [
+        "GUID:583ea5197e66ac34e89622e07e748d06"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

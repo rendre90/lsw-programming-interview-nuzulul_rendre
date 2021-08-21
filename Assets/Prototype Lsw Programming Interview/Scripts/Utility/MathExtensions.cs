@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using PrototypeLSWProgrammingInterview.Utility;
 using PrototypeLSWProgrammingInterview.Utility.VariableReference;
+using System.Threading.Tasks;
 public static class MathExtensions
 {
     static Dictionary<string, Tween> dotweenProcess = new Dictionary<string, Tween>();
@@ -22,4 +24,13 @@ public static class MathExtensions
             }
         }
     }
+
+    public static async void LerpString(this VariableStringReference variable, string targetString , Action onUpdate = null){
+        variable.lerpValue = "";
+        for(int i = 0; i < targetString.Length; i++){
+            variable.lerpValue += targetString[i];
+            onUpdate?.Invoke();
+            await new WaitForSeconds(variable.floatReference.Value);
+        }
+    } 
 }
