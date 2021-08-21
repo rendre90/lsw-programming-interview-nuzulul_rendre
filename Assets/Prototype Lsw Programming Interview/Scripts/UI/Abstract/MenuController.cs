@@ -12,7 +12,7 @@ namespace PrototypeLSWProgrammingInterview.UI.Abstract
 
         protected Canvas canvas;
         protected CanvasGroup canvasGroup;
-        private TransitionState transitionState;
+        protected TransitionState transitionState;
 
         private void Awake()
         {
