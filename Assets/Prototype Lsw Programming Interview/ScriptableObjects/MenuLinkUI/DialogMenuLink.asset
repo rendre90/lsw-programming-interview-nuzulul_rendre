@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21300098f499a1144a134324eba155ed, type: 3}
+  m_Name: DialogMenuLink
+  m_EditorClassIdentifier: 
+  menuController: {fileID: 4948284030302655541, guid: 1f2e32a1bc22c1444961f955b9ae3ead,
+    type: 3}
+  menuLink: {fileID: 11400000, guid: bbdce00266a2a5644943aea4931b9371, type: 2}

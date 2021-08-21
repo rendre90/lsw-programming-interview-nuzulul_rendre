@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac33acd3e2adc844832be52b9aaa9bc, type: 3}
+  m_Name: JhonnyDialog
+  m_EditorClassIdentifier: 
+  value: Woow.. this goods is really good
+  floatReference: {fileID: 11400000, guid: ba6fc35bdc13a384186a32f3512489db, type: 2}
+  normalSpeed: 0.08
+  fastSpeed: 0.001
