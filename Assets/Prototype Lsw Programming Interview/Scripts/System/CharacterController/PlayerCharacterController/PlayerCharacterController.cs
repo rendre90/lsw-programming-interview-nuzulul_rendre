@@ -13,11 +13,14 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController.PlayerChar
            gameObject.layer = LayerMask.NameToLayer("CharacterPlayer");
            InitializeMove();
            InitializeInteract();
+           InitializeAnimation();
        }
 
        void Update(){
            ReadMoveInput();
            ReadInteractionInput();
+           SetAnimation();
+           SetLayer();
        }
 
        void FixedUpdate(){
