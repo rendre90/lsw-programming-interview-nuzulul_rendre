@@ -22,9 +22,9 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController.PlayerChar
             foreach(var i in detect){
                 var pos = i.transform.position;
                 if(transform.position.y > i.transform.position.y){
-                    pos.z = transform.position.z - 0.1f;
+                    pos.z = transform.position.z - 0.25f;
                 }else{
-                    pos.z = transform.position.z + 0.1f;
+                    pos.z = transform.position.z + 0.25f;
                 }
 
                 neighborList.Add((i.transform, i.transform.position.z));

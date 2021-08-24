@@ -11,18 +11,12 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterAnimation{
         readonly string parameter_vertical_name;
         readonly string parameter_speed_name;
 
-        public void SetAnimation(float horizontal, float vertical){
-            animator.SetFloat(parameter_horizontal_name, horizontal);
-            animator.SetFloat(parameter_vertical_name, vertical);
-            Vector2 dir = new Vector2(horizontal, vertical);
+        public void SetAnimation(Vector2 dir){
             animator.SetFloat(parameter_speed_name, dir.sqrMagnitude);
+            animator.SetFloat(parameter_horizontal_name, dir.x);
+            animator.SetFloat(parameter_vertical_name, dir.y);
         }
 
-   
-
-        public void FaceFront(float dir ){
-            
-        }
 
         void SetSpeed(float speed){
             animator.SetFloat(parameter_speed_name, speed);

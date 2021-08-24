@@ -12,7 +12,7 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController.PlayerChar
 
         void InitializeInteract(){
             interactingInput = new ControllerInputInteracting();
-            interact = new InteractingWithRadius(this.transform, radius, 1 << LayerMask.NameToLayer("NPC") | 1 << LayerMask.NameToLayer("Environment"));
+            interact = new InteractingWithRadius(transform, radius, 1 << LayerMask.NameToLayer("NPC") | 1 << LayerMask.NameToLayer("Environment"));
         }
 
         void ReadInteractionInput(){

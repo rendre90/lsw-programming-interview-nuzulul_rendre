@@ -4,6 +4,6 @@ using UnityEngine;
 namespace PrototypeLSWProgrammingInterview.System.CharacterAnimation{
     public interface ICharacterAnimation
     {
-        void SetAnimation(float horizontal, float vertical);
+        void SetAnimation(Vector2 dir);
     }
 }

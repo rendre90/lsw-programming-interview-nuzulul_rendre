@@ -9,6 +9,7 @@ namespace PrototypeLSWProgrammingInterview.System.CharacterController{
     public abstract class BaseCharacterController : MonoBehaviour
     {
         protected Rigidbody2D rb;
+        [SerializeField] protected SpriteRenderer body;
         // Start is called before the first frame update
         protected virtual void Start()
         {
