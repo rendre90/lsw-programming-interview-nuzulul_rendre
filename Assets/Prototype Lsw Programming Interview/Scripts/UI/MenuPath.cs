@@ -12,5 +12,9 @@ namespace PrototypeLSWProgrammingInterview.UI{
         public static class Dialog{
             public static string DialogPlayer = "dialog_player";
         }
+
+        public static class DressMenu{
+            public static string Main = "main";
+        }
     }
 }

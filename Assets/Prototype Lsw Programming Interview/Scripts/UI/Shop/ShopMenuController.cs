@@ -16,7 +16,7 @@ namespace PrototypeLSWProgrammingInterview.UI.Shop
         List<StoreItem> clothData;
         [SerializeField]Transform clothParent;
         void Start(){
-            clothData = itemData.GetBuyAbleType(ItemType.Cloth);
+            clothData = itemData.GetClothItem();
             GenerateShopCloth();
         }
         void GenerateShopCloth(){
