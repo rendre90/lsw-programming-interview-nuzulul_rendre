@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using DG.Tweening;
 namespace PrototypeLSWProgrammingInterview.Utility{
     public static class ExtendedBehaviour
     {

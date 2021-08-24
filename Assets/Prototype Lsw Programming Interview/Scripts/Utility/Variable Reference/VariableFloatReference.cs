@@ -14,9 +14,17 @@ namespace PrototypeLSWProgrammingInterview.Utility.VariableReference
         [SerializeField] float value;
         [SerializeField] bool isAlwaysPositive;
         public override event Action OnUpdateVariable;
+        [SerializeField] float initialValue;
         void OnEnable(){
             lerpValue = 0;
             LerpValue(); 
+        }
+
+        public void InitPath(string path, float? initialValue = null){
+            if(initialValue != null){
+                this.initialValue =(float)initialValue;
+            }
+            base.InitPath(path);
         }
 
         void IReferenceUtility<float>.DecreaseValue(float otherValue){
