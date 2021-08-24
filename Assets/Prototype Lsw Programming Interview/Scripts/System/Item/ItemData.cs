@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PrototypeLSWProgrammingInterview.System.Item.Cloth;
+
 namespace PrototypeLSWProgrammingInterview.System.Item{
 
     [CreateAssetMenu(menuName = "MyScriptableObjects/ItemDataBase")]
@@ -21,8 +23,8 @@ namespace PrototypeLSWProgrammingInterview.System.Item{
             return items.FindAll((x)=>x is UseableItem);
         }
 
-        public List<StoreItem> GetBuyAbleType(ItemType typeItem){
-            return GetBuyAbleItem().FindAll((x)=>x.ItemType == typeItem);
+        public List<StoreItem> GetClothItem(){
+            return GetBuyAbleItem().FindAll(((x)=>x is ClothData));
         }
 
 

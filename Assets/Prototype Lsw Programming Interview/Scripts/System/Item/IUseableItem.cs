@@ -4,6 +4,7 @@ using UnityEngine;
 
 public interface IUseableItem
 {
-    void Use();
+    void Use(Sprite sprt);
     void Preview();
+    void UnUse();
 }

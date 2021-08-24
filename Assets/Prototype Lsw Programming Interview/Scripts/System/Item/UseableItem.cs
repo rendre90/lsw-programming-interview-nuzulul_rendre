@@ -6,11 +6,15 @@ namespace PrototypeLSWProgrammingInterview.System.Item{
     public class UseableItem : BaseItem, IUseableItem
     {
 
-        void IUseableItem.Use(){
+        void IUseableItem.Use(Sprite sprite){
 
         }
 
         void IUseableItem.Preview(){
+            
+        }
+
+        void IUseableItem.UnUse(){
             
         }
     }

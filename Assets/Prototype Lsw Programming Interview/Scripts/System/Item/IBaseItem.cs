@@ -7,8 +7,7 @@ namespace PrototypeLSWProgrammingInterview.System.Item{
     {
         string ItemId {get;}
         string ItemName{get;}
-        ItemType ItemType{get;}
         Sprite IconSprite{get;}
-        Sprite PreviewSprite{get;}
+
     }
 }
